@@ -1,0 +1,43 @@
+body {
+	background-color: #BFFFB2
+}
+
+img {
+  height: 500px;
+  vertical-align: middle;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: #4BBA35;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menuItem {
+  float: left;
+}
+
+/* Don't make it look like a hyperlink */
+.menuItem a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Change color when mouse hovers */ 
+.menuItem a:hover {
+	background-color: #409e2d;
+}
+
+.ffList {
+  list-style-type: circle;
+}
+
+.ffItem {
+  margin-top: 10px;
+  font-size: x-large;
+}

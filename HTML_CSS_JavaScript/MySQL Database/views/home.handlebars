@@ -1,0 +1,31 @@
+<h1>New Exercise</h1>
+
+<form id="newExercise">
+  <label>Exercise: <input type="text" name="name" id="editExer"></label>
+  <br>
+  <label>Repetitions: <input type="number" name="reps" id="editReps"></label>
+  <br>
+  <label>Weight: <input type="number" name="weight" id="editWeight"></label>
+  <br>
+  <label>Date: <input type="date" name="date" id="editDate"></label>
+  <br>
+  <label>Lbs: <input type="checkbox" name="unit" id="unit"></label>
+  <br>
+  <input type="button" name="submitWork" id="submitWork" value="Submit">
+  <input type="button" name="submitEdit" id="submitEdit" value="Submit Edit">
+  <p>Press the edit button on the row you want to edit, then press the 'Submit Edit' button above.</p>
+</form>
+
+<table cellpadding="10" id="workTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Repetitions</th>
+      <th>Weight</th>
+      <th>Date</th>
+      <th>Unit</th>
+    </tr>
+
+  <script src="./getData.js"></script>
+</table>
+

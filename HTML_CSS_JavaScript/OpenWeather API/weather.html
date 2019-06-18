@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Get Weather</legend>
+      <form>    
+        <label>Enter a city or Zip code:
+          <input type="text" name="text_input" id="location" size="30" maxlength="100">
+        </label>
+      </form>
+    </fieldset>
+    <script src="get.js"></script>
+
+    <div>
+      <h2>Weather</h2>
+      <p><span>Conditions: </span><span id="getResponse"></span></p>
+    </div>
+
+    <fieldset>
+      <legend>Text to be Returned</legend>
+      <form >
+        <label>Enter Text:
+          <input type="text" name="text_input" id="userEnteredText" size="30" maxlength="100">
+        </label>
+      </form>
+    </fieldset>
+    <script src="post.js"></script>
+
+    <div>
+      <h2>Result</h2>
+      <p><span>Text Returned: </span><span id="postResponse"></span></p>
+    </div>
+
+  </body>
+</html>
+

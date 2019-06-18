@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Hello!</title>
+  </head>
+
+  <body>
+
+    <ul>
+      <li><a href="/~ingrassg">Home</a><li>
+      <li><a href="/~ingrassg/how-to-save">How To Save</a><li>
+      <li><a href="/~ingrassg/investing-101">Investing 101</a><li>
+      <li><a href="/~ingrassg/checklist">Financial Freedom</a><li>
+    </ul>
+
+    <br>
+
+    <h1>Welcome to the Retirement Calculator!</h1>
+
+    <div class="slideshow">
+
+      <div class="slides">
+      	<div class="slideNum">1/3</div>
+      	<a href="/~ingrassg/how-to-save"><img src="bank-notes.jpg" style="width: 100%"></a>
+      </div>
+
+      <div class="slides">
+      	<div class="slideNum">2/3</div>
+      	<a href="/~ingrassg/investing-101"><img src="stocks.jpg" style="width: 100%"></a>
+      </div>
+
+      <div class="slides">
+        <div class="slideNum">3/3</div>
+        <a href="/~ingrassg/checklist"><img src="accounting.jpg" style="width: 100%"></a>
+      </div>
+
+    </div>
+
+    <br>
+
+    <h2>How It Works</h2>
+    <p>This is a very simple calculator. It assumes a retirement age of 65. Therefore you can only enter an age between 0 - 64. However, you can try to save up to 100 million dollars if you wish.</p>
+    <p>It calculates two different savings options, investing in the stock market or simply putting your money in a savings account at a bank. The bank account will not accrue any interest and will actually lose money due to inflation. The rate of growth used for the stock investment is 5.0%. This number is based on the historical compounded annual growth rate, minus inflation, of the U.S. stock market.</p>
+    <p>The amounts returned will tell you how much you would need to invest or save per year in order to reach the amount you entered by the retirement age.</p>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Calculator</legend>
+        <label>Enter Your Age:
+          <input type="number" name="inputNum" id="age" min="0" max="64">
+        </label>
+        <br>   
+        <label>Enter Your Desired Retirement Balance:
+          <input type="number" name="inputNum" id="total" min="0" max="100000000">
+        </label>
+        <br>
+        <button type="button" id="submitInfo">Submit</button>
+      </fieldset>
+    </form>
+
+    <fieldset>
+      <legend>Amount Necessary Per Year</legend>
+        <p><b>Investing in the Stock Market:</b></p>
+          <p id="perYearStock">$0.00</p>
+        <p><b>Only Saving:</b></p>
+          <p id="perYearBank">$0.00</p>
+    </fieldset>
+
+    <div class="divider"></div>
+
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+      <fieldset>
+        <legend>How Did I Do?</legend>
+        <label>Review:
+          <input type="text" name="review" size="50" maxlength="1000">
+          <input type="submit" value="Submit">
+        </label>
+        <p>Pressing submit will take you to a confirmation page. Just press the back button on your browser to return to this page.</p>
+      </fieldset>
+    </form>
+
+    <div class="footBorder"></div>
+
+    <p id="rights">*all pictures are free use and sourced from <a href="https://www.pexels.com/">www.pexels.com</a></p>
+
+    <script src="project.js"></script>
+
+  </body>
+</html>

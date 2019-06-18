@@ -1,0 +1,45 @@
+body {
+	background-color: #BFFFB2
+}
+
+img {
+  height: 500px;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #4BBA35;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+/* Don't make it look like a hyperlink */
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Change color when mouse hovers */ 
+li a:hover {
+	background-color: #409e2d;
+}
+
+.stocks {
+	background-color: #E1FFDB;
+	height: 250px;
+	overflow-y: scroll;
+}
+
+td {
+	padding: 20px;
+
+}
