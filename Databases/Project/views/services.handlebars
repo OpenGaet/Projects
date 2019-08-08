@@ -1,0 +1,40 @@
+<h1 style="margin: 25px">Services</h1>
+
+    <br>
+
+    <form id="newEntry">
+      <fieldset>
+        <legend>Assign Service to Guest</legend>
+
+        <label >SrvID:
+          <input id = "ser1" type="number" name="id" size="30" maxlength="100">
+        </label>
+
+        <label>GuestID:
+          <input id = "ser2" type="number" name="guestid" size="30" maxlength="100">
+        </label>
+
+        <br>
+        <input id = "sbutton1" class="button" type="submit" value="Assign"/>
+      </fieldset>
+    </form>
+
+    <table id = "services_table">
+      <thead>
+      <tr>
+        <th>SrvID</th>
+        <th>Type</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody> 
+        {{#each services}} 
+        <tr> 
+            <td>{{SrvID}}</td> 
+            <td>{{Type}}</td> 
+            <td>{{Price}}</td> 
+            <td><button>Delete</button></td>
+        </tr> 
+        {{/each}} 
+    </tbody>
+    </table>

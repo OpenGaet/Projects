@@ -1,0 +1,77 @@
+<h1 style="margin: 25px">Rooms</h1>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Assign Reservation</legend>
+
+          <label>RoomID:
+            <input id = "rm1" type="number" name="id" size="30" maxlength="100">
+          </label>
+
+          <label>ResID:
+            <input id = "rm2" type="number" name="resid" size="30" maxlength="100">
+          </label>
+
+          <br>
+          <input id = "rmbutton1" class="button" type="submit" value="Assign"/>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Search Rooms</legend>
+
+          <label>RoomID:
+            <input id = "rm3" type="number" name="id" size="30" maxlength="100">
+          </label>
+
+          <br>
+          <input id = "rmbutton2" class="button" type="submit" value="Search"/>
+          <br>
+
+          <table id = "rooms_search_table">
+            <thead>
+            <tr>
+              <th>RoomID</th>
+              <th>Check-In</th>
+              <th>Check-Out</th>
+              <th>Guest</th>
+              <th>Total Owed</th>
+              <th>ResID</th>
+            </tr>
+          </thead>
+          <tbody id = "roomSearchBody">
+          </tbody>
+          </table>
+      </fieldset>
+    </form>
+
+    <table id = "rooms_table">
+      <thead>
+	    <tr>
+	      <th>RoomID</th>
+	      <th>View</th>
+	      <th>Bed</th>
+	      <th>Rate</th>
+	      <th>Class</th>
+	      <th>Capacity</th>
+	      <th>ResID</th>
+	    </tr>
+      </thead>
+      <tbody> 
+        {{#each rooms}} 
+        <tr> 
+            <td>{{RoomID}}</td> 
+            <td>{{View}}</td> 
+            <td>{{Bed}}</td> 
+            <td>{{Rate}}</td>
+            <td>{{Class}}</td>
+            <td>{{Capacity}}</td>
+            <td>{{ResID}}</td>
+            <td><button>Delete</button></td>
+        </tr> 
+        {{/each}} 
+      </tbody>
+    </table>

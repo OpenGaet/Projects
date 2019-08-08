@@ -1,0 +1,99 @@
+<h1 style="margin: 25px">Reservations</h1>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Add Reservation</legend>
+
+          <label>Check-In:
+            <input id = "res1" type="date" name="checkin">
+          </label>
+
+
+          <label>Check-Out:
+            <input id = "res2" type="date" name="checkout">
+          </label>
+
+          <label>Total Owed:
+            <input id = "res3" type="number" name="owed" size="30" maxlength="100">
+          </label>
+
+          <label>GuestID:
+            <input id = "res4" type="number" name="guestid" size="30" maxlength="100">
+          </label>
+
+          <label>RoomID:
+            <input id = "res5" type="number" name="roomid" size="30" maxlength="100">
+          </label>
+
+          <br>
+          <input id = "rbutton1" class="button" type="submit" value="Add"/>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Remove Reservation</legend>
+
+        <label >ResID:
+          <input id = "res6" type="number" name="id" size="30" maxlength="100">
+        </label>
+
+        <br>
+        <input id = "rbutton2" class="button" type="submit" value="Remove"/>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Search Reservations</legend>
+
+          <label>ResID:
+            <input id = "res7" type="number" name="id" size="30" maxlength="100">
+          </label>
+
+          <br>
+          <input id = "rbutton3" class="button" type="submit" value="Search"/>
+          <br>
+
+          <table id = "reservations_search_table">
+            <thead>
+            <tr>
+              <th>ResID</th>
+              <th>Primary Guest</th>
+              <th>Rooms</th>
+              <th>Payment Methods</th>
+            </tr>
+            </thead>
+            <tbody id = "resSearchBody">
+            </tbody>
+          </table>
+      </fieldset>
+    </form>
+
+    <table id = "reservations_table">
+      <thead>
+        <tr>
+          <th>ResID</th>
+          <th>Check-In</th>
+          <th>Check-Out</th>
+          <th>Total Owed</th>
+          <th>GuestID</th>
+          <th>PayID</th>
+        </tr>
+      </thead>
+      <tbody> 
+        {{#each reservations}} 
+        <tr> 
+            <td>{{ResID}}</td> 
+            <td>{{CheckIn}}</td> 
+            <td>{{CheckOut}}</td> 
+            <td>{{TotalOwed}}</td>
+            <td>{{GuestID}}</td>
+            <td>{{PayID}}</td>
+            <td><button>Delete</button></td>
+        </tr> 
+        {{/each}} 
+      </tbody>
+    </table>

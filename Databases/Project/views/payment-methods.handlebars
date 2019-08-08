@@ -1,0 +1,73 @@
+<h1 style="margin: 25px">Payment Methods</h1>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Add Payment Method</legend>
+          <form>
+            <label>Type</label>
+            <input id="pradio1" type="radio" name="pay" value="cash">Cash
+            <input id="pradio2" type="radio" name="pay" value="credit">Credit
+            <input id="pradio3" type="radio" name="pay" value="check">Check
+          </form>
+          <br>
+
+          <label>Details:
+            <input id = "pay1" type="text" name="details" size="30" maxlength="100">
+          </label>
+
+          <br>
+          <input id = "pbutton1" class="button" type="submit" value="Add"/>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Remove Payment Method</legend>
+
+        <label >PayID:
+          <input id = "pay2" type="number" name="id" size="30" maxlength="100">
+        </label>
+
+        <br>
+        <input id = "pbutton2" class="button" type="submit" value="Remove"/>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Assign Payment Method to Reservation</legend>
+
+        <label >PayID:
+          <input id = "pay3" type="number" name="id" size="30" maxlength="100">
+        </label>
+
+        <label >ResID:
+          <input id = "pay4" type="number" name="resid" size="30" maxlength="100">
+        </label>
+
+        <br>
+        <input id = "pbutton3" class="button" type="submit" value="Assign"/>
+      </fieldset>
+    </form>
+
+    <table id = "paymentMethods_table">
+      <thead>
+      <tr>
+        <th>PayID</th>
+        <th>Type</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody> 
+        {{#each payMethods}} 
+        <tr> 
+            <td>{{PayID}}</td> 
+            <td>{{Type}}</td> 
+            <td>{{Details}}</td> 
+            <td><button>Delete</button></td>
+        </tr> 
+        {{/each}} 
+      </tbody>
+    </table>

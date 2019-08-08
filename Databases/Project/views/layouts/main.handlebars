@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="UTF-8">
+  <title>Database Project</title>
+  <link rel="stylesheet" href="/static/stylesheets/style.css">
+
+  {{#each jsscripts}}
+    <script src="/static/{{this}}"></script>
+  {{/each}}
+
+ </head>
+
+ <body>
+   <ul>
+      <li id="title"><a href="http://flip3.engr.oregonstate.edu:7592">The DB Suites</a><li>
+      <li><a href="http://flip3.engr.oregonstate.edu:7592/services">Services</a></li>
+      <li><a href="http://flip3.engr.oregonstate.edu:7592/payment-methods">Payment Methods</a></li>
+      <li><a href="http://flip3.engr.oregonstate.edu:7592/reservations">Reservations</a><li>
+      <li><a href="http://flip3.engr.oregonstate.edu:7592/rooms">Rooms</a><li>
+      <li><a href="http://flip3.engr.oregonstate.edu:7592/guests">Guests</a><li>
+    </ul>
+
+    <br>
+
+   {{{body}}}
+
+    <div class="footBorder"></div>
+
+ </body>
+ <footer><p>CS 340 - Team Alvin and the Chipmunks: The SQL - Gaetan Ingrassia and Randolph Tucker</p></footer>
+</html>

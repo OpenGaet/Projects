@@ -1,0 +1,83 @@
+#title {
+  font-size: 32pt;
+  float: left;
+}
+
+body {
+  background-color: #fbfff5;
+  margin: 0px;
+}
+
+ul {
+  height: 100px;
+  list-style-type: none;
+  background-color: #00b098;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+li {
+  float: right;
+  line-height: 50px;
+  height: 50px;
+}
+
+/* Don't make it look like a hyperlink */
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Change color when mouse hovers */ 
+li a:hover {
+  background-color: #007568;
+}
+
+table {
+  margin: 25px;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+th, td {
+  width: 20%;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color:#f5f5f5;
+}
+
+form {
+  margin: 25px;
+}
+
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  margin-top: 15px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #00b098;
+  width: 100%;
+
+  padding: 50px;
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
+}

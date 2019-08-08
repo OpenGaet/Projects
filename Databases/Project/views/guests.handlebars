@@ -1,0 +1,67 @@
+<h1 style="margin: 25px">Guests</h1>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Add Guest</legend>
+
+          <label>First Name:
+            <input id = "guest1" type="text" name="fname" size="30" maxlength="100">
+          </label>
+
+
+          <label>Last Name:
+            <input id = "guest2" type="text" name="lname" size="30" maxlength="100">
+          </label>
+
+
+          <label>Age:
+            <input id = "guest3" type="number" name="age" size="30" maxlength="100">
+          </label>
+
+
+          <label>RoomID:
+            <input id = "guest4" type="number" name="roomid" size="30" maxlength="100">
+          </label>
+
+          <br>
+          <input id = "gbutton1" class="button" type="submit" value="Add"/>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Remove Guest</legend>
+
+        <label >GuestID:
+          <input id = "guest5" type="number" name="id" size="30" maxlength="100">
+        </label>
+
+        <br>
+        <input id = "gbutton2" class="button" type="submit" value="Remove"/>
+      </fieldset>
+    </form>
+
+    <table id ="guests_table">
+      <thead>
+        <tr>
+          <th>GuestID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>RoomID</th>
+        </tr>
+      </thead>
+      <tbody> 
+        {{#each guests}} 
+        <tr> 
+            <td>{{GuestID}}</td> 
+            <td>{{FirstName}}</td> 
+            <td>{{LastName}}</td> 
+            <td>{{Age}}</td>
+            <td>{{RoomID}}</td>
+            <td><button>Delete</button></td>
+        </tr> 
+        {{/each}} 
+      </tbody>
+    </table>
