@@ -3,4 +3,4 @@
 g++ GBoardMain.cpp GBoard.cpp -o game
 
 ## To Run:
-game
+./game
