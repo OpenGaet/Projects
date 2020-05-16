@@ -1,2 +1,2 @@
 # Projects
-School and personal projects
+University and Personal projects
