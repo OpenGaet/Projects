@@ -1,7 +1,11 @@
-To Compile:
+## To Compile
+```BASH
 gcc ingrassg.buildrooms.c -o buildrooms
 gcc ingrassg.adventure.c -o adventure
+```
 
-To Run:
+## To Run
+```BASH
 buildrooms
 adventure
+```
