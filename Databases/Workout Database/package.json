@@ -1,0 +1,19 @@
+{
+  "name": "gaetan-ingrassia",
+  "version": "1.0.0",
+  "description": "workout-table",
+  "main": "database.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenGaet/cs290/tree/master/Week%2010"
+  },
+  "keywords": [
+    "workout",
+    "table"
+  ],
+  "author": "Gaetan Ingrassia",
+  "license": "ISC"
+}
